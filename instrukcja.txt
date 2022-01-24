@@ -1,0 +1,4 @@
+http://localhost:8082/friends   -lista przyjaciol
+http://localhost:8082/friend/1    -dane danego przyjaciela (1 moze byc zastapione numerem z listy przyjaciol [ID])
+http://localhost:8082/friend/add    -dodanie przyjaciela
+http://localhost:8082/date     -wyswietla obecna date i czas
