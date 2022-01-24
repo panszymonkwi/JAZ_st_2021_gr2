@@ -32,22 +32,7 @@ public class FriendsController {
         model.addAttribute( "friend", new Friend());
         return "addForm";
     }
-      @GetMapping("friends/del")
-      public String deleteFriends( @ModelAttribute Friend friend,Model model) {
-          model.addAttribute( "friend", new Friend());
-          showFriendsAddForm(model);
-          model.addAttribute("friend", friendService.getFriendFromRepo(friend.getId()));
-          showFriends(model);
-        friendService.removeFriendFromRepo(friend.getId());
-        model.addAttribute( "friend", new Friend());
-        return "addForm";
-    }
-     /*   @DeleteMapping("friend/del")
-        public String submitFriendDelForm (@ModelAttribute Friend friend, Model model) {
-            friendService.removeFriendFromRepo(friend.getId());
-            model.addAttribute( "friend", new Friend());
-            return "addForm";
-        }*/
+
   }
 
 
