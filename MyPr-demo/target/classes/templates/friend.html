@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends</title>
+</head>
+<body>
+<table>
+     <h2>---  F R I E N D S ---</h2>
+  <!-- </br>-->
+    <h4> id : name : surname : city : phone : mail </h4>
+    <tbody>
+       <tr th:each="friend:${friends}">
+       <td th:text="${friend.id}" />
+       <td th:text="${friend.name}"/>
+       <td th:text="${friend.surname}"/>
+       <td th:text="${friend.city}"/>
+       <td th:text="${friend.phone}"/>
+       <td th:text="${friend.mail}"/>
+       <td th:if="${friend.city} == Gdansk" th:text = "buddy" }/>
+       <td />
+   </tr>
+ </tbody>
+</table>
+</body>
+</html>

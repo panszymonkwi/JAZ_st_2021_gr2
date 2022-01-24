@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" >
+    <title>Add friend form</title>
+</head>
+<body>
+ <form action="#" th:action="@{/friends/add}" th:object="${friend}" method="post">
+ <table  border="1">
+     <tr>
+         <td><label>ID</label></td>
+         <td><input type="Number" th:field="*{id}" /></td>
+     </tr>
+     <tr>
+         <td><label>NAME</label></td>
+         <td><input type="text" th:field="*{name}" /></td>
+     </tr>
+     <tr>
+         <td><label>SURNAME</label></td>
+         <td><input type="text" th:field="*{surname}" /></td>
+     </tr>
+     <tr>
+         <td><label>CITY</label></td>
+         <td><input type="text" th:field="*{city}" /></td>
+     </tr>
+     <tr>
+         <td><label>PHONE</label></td>
+         <td><input type="text" th:field="*{phone}" /></td>
+     </tr>
+     <tr>
+         <td><label>MAIL</label></td>
+         <td><input type="text" th:field="*{mail}" /></td><tr>
+      </tr>
+     <tr>
+         <td><input type="submit" value="Submit" /></td><tr>
+      </tr>
+   </table>
+ </form>
+</body>
+</html>
